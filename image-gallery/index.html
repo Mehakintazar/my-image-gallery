@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Thumbnail gallery -->
+    <div class="thumbnail-gallery">
+        <img src="pexels-sanaan-3052361.jpg" alt="Image 1" onclick="openSlideshow(1)">
+        <img src="pexels-ozgomz-1755385.jpg" alt="Image 2" onclick="openSlideshow(2)">
+        <img src="pexels-njeromin-18160363.jpg" alt="Image 3" onclick="openSlideshow(3)">
+        <img src="pexels-ninauhlikova-287240.jpg" alt="Image 4" onclick="openSlideshow(4)">
+        <img src="pexels-thatguycraig000-1563355.jpg" alt="Image 5" onclick="openSlideshow(5)">
+        <img src="pexels-fabianwiktor-994605.jpg" alt="Image 6" onclick="openSlideshow(6)">
+    </div>
+
+    <!-- Slideshow container (hidden by default) -->
+    <div id="slideshowModal" class="slideshow-container" style="display:none;">
+        <span class="close" onclick="closeSlideshow()">&times;</span>
+        <div class="mySlides fade">
+            <img src="pexels-sanaan-3052361.jpg" alt="Image 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="pexels-ozgomz-1755385.jpg" alt="Image 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="pexels-njeromin-18160363.jpg" alt="Image 3">
+        </div>
+        <div class="mySlides fade">
+            <img src="pexels-ninauhlikova-287240.jpg" alt="Image 4">
+        </div>
+        <div class="mySlides fade">
+            <img src="pexels-thatguycraig000-1563355.jpg" alt="Image 5">
+        </div>
+        <div class="mySlides fade">
+            <img src="pexels-fabianwiktor-994605.jpg" alt="Image 6">
+        </div>
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
